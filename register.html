@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Style.css" rel="stylesheet" />
+    <style>
+        .register{
+            color: #FFD700;
+        }
+
+        #tofas {
+            margin: 0 auto;
+        }
+
+        .tr {
+            direction: rtl;
+        }
+
+        .td {
+            color: #FFD700;
+            margin-top: 10px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 30px;
+        }
+
+        input {
+            margin-top: 10px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 30px;
+        }
+
+        #submit{
+            background-color: rgb(36, 123, 160);
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 30px;
+            margin-top: 30px;
+            width: 130px;
+            height: 100px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        #submit:hover{
+            background-color: rgb(116, 163, 157);
+            color: white;
+            transition: 1s;
+        }
+
+        #mFName, #mLName, #mEMail, #mPassword, #mYear, #mCity{
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 18px;
+            display: none;
+        }
+
+        #City{
+            text-align: center;
+            background-color: rgb(36, 123, 160);
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 18px;
+            width: 150px;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #City:hover{
+            background-color: rgb(116, 163, 157);
+            color: white;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <a href = "index.html"><img src="pics/logo.png"></a>
+    </center> 
+
+    <nav>
+        <a class = "index" href = "index.html"> דף הבית </a>
+        <a class = "lion" href = "lion.html"> אריה </a>
+        <a class = "elephant" href = "elephant.html"> פיל </a>
+        <a class = "dog" href = "dog.html"> כלב </a>
+        <a class = "cat" href = "cat.html"> חתול </a>
+        <a class = "cow" href = "cow.html"> פרה </a>
+        <a class = "horse" href = "horse.html"> סוס </a>
+        <a class = "login" href = "login.html"> התחברות </a>
+        <a class = "register" href = "register.html"> הרשמה </a>
+    </nav>
+
+    <h1>הרשמה לאתר</h1>
+    <form>
+        <table id="tofas">
+            <tr class="tr">
+                <td class="td">שם פרטי</td>
+                <td class="td"><input type="text" id="fName" name="fName" size="40"></td>
+                <td class="td">
+                    <input type="text" id="mFName" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr class="tr">
+                <td class="td">שם משפחה</td>
+                <td class="td"><input type="text" id="lName" name="lName" size="40"></td>
+                <td class="td">
+                    <input type="text" id="mLName" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr class="tr">
+                <td class="td">כתובת אימייל</td>
+                <td class="td"><input type="text" id="email" name="email" size="40"></td>
+                <td class="td">
+                    <input type="text" id="mEMail" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr class="tr">
+                <td class="td">סיסמה</td>
+                <td class="td"><input type="password" id="password" name="password" size="40"></td>
+                <td class="td">
+                    <input type="text" id="mPassword" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+            
+            <tr class="tr">
+                <td class="td">שנת לידה</td>
+                <td class="td"><input type="text" id="Year" name="year" size="40"></td>
+                <td class="td">
+                    <input type="text" id="mYear" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+            <tr><td><br></td></tr>
+
+            <tr class="tr">
+                <td class="td">עיר</td>
+                <td class="td">
+                    <select id="City" name="city">
+                        <option value="sel">בחר עיר</option>
+                        <option value="Ashdod">אשדוד</option>
+                        <option value="Ashkelon">אשקלון</option>
+                        <option value="Beit Shemesh">בית שמש</option>
+                        <option value="Beer Sheva">באר שבע</option>
+                        <option value="Bnei Brak">בני ברק</option>
+                        <option value="Eilat">אילת</option>
+                        <option value="Haifa">חיפה</option>
+                        <option value="Herzliya">הרצליה</option>
+                        <option value="Holon">חולון</option>
+                        <option value="Jerusalem">ירושלים</option>
+                        <option value="Kfar Saba">כפר סבא</option>
+                        <option value="Lod">לוד</option>
+                        <option value="Netanya">נתניה</option>
+                        <option value="Netivot">נתיבות</option>
+                        <option value="Petah Tikva">פתח תקווה</option>
+                        <option value="Ramat Gan">רמת גן</option>
+                        <option value="Rehovot">רחובות</option>
+                        <option value="Rishon Lezion">ראשון לציון</option>
+                        <option value="Tel Aviv">תל אביב</option>
+                        <option value="Tiberias">טבריה</option>
+                    </select>
+                </td>
+                <td class="td">
+                    <input type="text" id="mCity" disabled="disabled" />
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+            <tr><td><br></td></tr>
+
+            <tr class="tr">
+                <td class="td" colspan="2" style="text-align:center;">
+                    <input type = "submit" name = "submit" id = "submit" value = "הרשמה"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
