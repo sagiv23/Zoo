@@ -1,39 +1,42 @@
+*{
+    margin: 5;
+    padding: 5;
+}
+
 body {
-    background-image:url("pics/background.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    margin:0;
-    padding:0;
+    background-image: url("pics/background.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     direction: rtl;
 }
 
 h1 {
     text-align: center;
-    margin-top: 40px;
-    font-size: 70px;
+    margin-top: 3%;
+    font-size: 500%;
     color: #FFD700;
     font-family: 'Rajdhani', sans-serif;
-    margin-right: 500px;
-    margin-left: 500px;
+    text-decoration: underline;
 }
 
 p {
     color: white;
     background-color: rgb(0, 0, 0, 0.50);
-    margin-top: 40px;
+    margin-top: 3%;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 40px;
+    font-size: 270%;
 }
 
 a {
-    margin: 10px;
+    margin: 1%;
     display: inline-block;
     text-decoration: none;
     color: white;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 270%;
 }
 
 a:hover {
@@ -42,12 +45,12 @@ a:hover {
 }
 
 nav {
-    height: 70px;
+    height: 100%;
     border: 2px solid rgb(0, 0, 0, 0.65);
     background-color: #2E8B57;
     text-align: center;
-    margin-top: 5px;
-    padding: 10px;
+    margin-top: 1%;
+    padding: 0.5%;
 }
 
 .img_block {
